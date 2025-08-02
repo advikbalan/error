@@ -1,0 +1,33 @@
+$ npm start
+
+> fullstack-app-backend@1.0.0 start
+> ts-node src/app.ts
+
+[dotenv@17.2.1] injecting env (5) from .env -- tip: ⚙️  override existing env vars with { override: true }
+C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/routes/index.ts:7:27 - error TS7006: Parameter 'app' implicitly has an 'any' type.
+
+7 export function setRoutes(app) {
+                            ~~~
+
+    at createTSError (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1617:30)       
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\src\app.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module.m._compile (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1618:23)       
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\Administrator\Desktop\vibe\vibe\fullstack-app\backend\node_modules\ts-node\src\index.ts:1621:12) {
+  diagnosticCodes: [ 7006 ]
+}
